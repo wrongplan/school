@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+header {
+  height: 40px;
+}
+.nav__logo-container {
+  line-height: 40px;
+}
+.nav__menu-inner {
+  text-align: center;
+  background: #005ba6;
+  display: none;
+}
+.baner {
+  background: #005ba6;
+  position: relative;
+  height: calc(100vh - 40px);
+}
+.baner__fluid {
+  position: relative;
+  z-index: 1;
+}
+.baner__title {
+  font-size: 25px;
+  line-height: 1.39;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+.baner__title-wpraper {
+  margin-top: 50px;
+}
+.baner__title--first-letter {
+  font-weight: 300;
+}
+.baner__title--last-line {
+  font-weight: 300;
+  color: #96bf0d;
+}
+.baner__button-wraper {
+  text-align: center;
+}
+.baner__button--item {
+  width: 80%;
+  height: 40px;
+  margin-top: 30px;
+  font-size: 18px;
+  background: #7facd2;
+  color: #fff;
+}
+.baner__button--item:hover {
+  background: #4991cc;
+}
+.baner__button--item:active {
+  font-weight: 700;
+  background: red;
+}
+.baner__button--item:focus {
+  font-weight: 700;
+}
+.baner__button-wraper:nth-last-child(1) .baner__button--item {
+  margin-top: 10px;
+  background: #96bf0d;
+}
+.baner__button-wraper:nth-last-child(1) .baner__button--item:hover {
+  background: #4991cc;
+}
+.baner__button-wraper:nth-last-child(1) .baner__button--item:active {
+  font-weight: 700;
+  background: red;
+}
+.baner__image-wraper {
+  position: absolute;
+  bottom: 0;
+}
+.who-we-are__paragraph-container {
+  margin-top: 30px;
+}
+.who-we-are__paragraph-title {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+  color: #005ba6;
+}
+.who-we-are__paragraph-title--color-first-letter {
+  color: #96bf0d;
+  font-weight: 700;
+}
+.who-we-are__paragraph-text {
+  text-align: justify;
+  margin-top: 19px;
+  margin-bottom: 0;
+}
+.who-we-are__button-container {
+  text-align: center;
+}
+.who-we-are__button--item {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 19px;
+  background: #005ba6;
+}
+.who-we-are__button--item:hover {
+  background: #4991cc;
+}
+.who-we-are__button--item:active {
+  font-weight: 700;
+  background: red;
+}
+.who-we-are__image-container {
+  text-align: center;
+}
+.who-we-are__image--item {
+  margin-top: 19px;
+}
+.goal {
+  background: #005ba6;
+}
+.goal__bg {
+  background: url("img/objected_in_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.goal__main-title-container {
+  margin-top: 30px;
+}
+.main-title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.main-title__font-weight {
+  font-weight: 300;
+  font-size: 36px;
+}
+.goal__subtitle-container {
+  margin-top: 40px;
+  text-align: center;
+}
+.goal__subtitle {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.goal__subtitle--color {
+  color: #96bf0d;
+  font-weight: 700;
+}
+.goal__paragraph {
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  margin: 15px 0 0 0;
+}
+.goal__button {
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 19px;
+  border-radius: 5px;
+  background: #7facd2;
+  border: none;
+}
+.goal__button:hover {
+  background: #4991cc;
+}
+.goal__button:active {
+  font-weight: 700;
+  background: red;
+}
+.goal__button-container:nth-last-child(1) .goal__button {
+  background: #96bf0d;
+  margin-bottom: 30px;
+}
+.goal__button-container:nth-last-child(1) .goal__button:hover {
+  background: #4991cc;
+}
+.goal__button-container:nth-last-child(1) .goal__button:active {
+  font-weight: 700;
+  background: red;
+}
+.recruitment {
+  background: #f2f2f2;
+}
+.recruitment__paragraph-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.recruitment__title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  color: #005ba6;
+  margin-bottom: 0;
+}
+.recruitment__title--color {
+  font-weight: 700;
+  color: #96bf0d;
+}
+.recruitment__paragraph {
+  margin-top: 15px;
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.recruitment__paragraph--bolder {
+  font-weight: 700;
+}
+.recruitment__button {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 19px;
+  background: #005ba6;
+}
+.recruitment__image-container {
+  text-align: center;
+  margin-top: 19px;
+}
+.bottom-menu {
+  margin-top: 30px;
+}
+.bottom-menu__paragraph {
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.bottom-menu--separator::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  background: #808080;
+  margin: 20px 0 0 0;
+}
+.bottom-menu__list-container {
+  margin: 20px 0 0 0 ;
+}
+.bottom-menu__menu-item {
+  padding: 2px 0;
+}
+.bottom-menu__menu-item--link {
+  color: #005ba6;
+  font-size: 13px;
+}
+.bottom-menu__menu-item--link:hover {
+  text-shadow: 0 0 0  #005ba6;
+  text-decoration: none;
+}
+.bottom-menu__copy {
+  background: #96bf0d;
+  text-align: center;
+  margin-top: 20px;
+}
+.bottom-menu__copy P {
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  header {
+    height: 50px;
+  }
+  .nav__logo-container {
+    line-height: 50px;
+  }
+  .baner {
+    height: calc(100vh - 90px);
+  }
+  .baner__title-wpraper {
+    margin-top: 90px;
+  }
+  .baner__button {
+    margin-top: 20px;
+  }
+  .baner__button--item {
+    margin-top: 0px;
+  }
+  .baner__button-wraper {
+    text-align: right;
+  }
+  .baner__button--item {
+    margin-top: 0px;
+  }
+  .baner__button-wraper:nth-last-child(1) {
+    text-align: left;
+  }
+  .baner__button-wraper:nth-last-child(1) .baner__button--item {
+    margin-top: 0px;
+  }
+  .baner__image-wraper {
+    position: absolute;
+    bottom: 0;
+  }
+  .who-we-are__paragraph-container {
+    margin-top: 50px;
+  }
+  .who-we-are__button--item {
+    margin-top: 30px;
+  }
+  .who-we-are__image--item {
+    margin-top: 30px;
+  }
+  .goal__main-title-container {
+    margin-top: 40px;
+  }
+  .main-title {
+    font-size: 25px;
+    color: #fff;
+  }
+  .goal__subtitle {
+    font-size: 22px;
+    margin: 0;
+  }
+  .goal__button {
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 19px;
+    border-radius: 5px;
+    background: #7facd2;
+    border: none;
+  }
+  .goal__subtitle-container {
+    margin-bottom: 40px;
+  }
+  .goal__button-container:nth-last-child(1) .goal__button {
+    background: #96bf0d;
+    margin-bottom: 30px;
+  }
+  .goal__button-container:nth-last-child(1) .goal__button:hover {
+    background: #4991cc;
+  }
+  .goal__button-container:nth-last-child(1) .goal__button:active {
+    font-weight: 700;
+    background: red;
+  }
+  .goal--position {
+    position: relative;
+  }
+  .goal__separathor {
+    width: 1px;
+    height: 90%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .goal__button-container {
+    text-align: right;
+  }
+  .goal__button-container:nth-last-child(1) {
+    text-align: left;
+  }
+  .recruitment {
+    padding-top: 30px;
+  }
+  .recruitment__paragraph-container {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .recruitment__title--color {
+    font-weight: 700;
+    color: #96bf0d;
+  }
+  .recruitment__title {
+    font-size: 25px;
+  }
+  .recruitment__button {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+  .recruitment__image-container {
+    margin-top: 0px;
+    position: relative;
+  }
+  .recruitment--image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    max-height: 100%;
+  }
+  .bottom-menu {
+    margin-top: 30px;
+  }
+  .bottom-menu--separator::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #808080;
+    margin: 0px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .bottom-menu__paragraph-and-logo-container {
+    padding-right: 30px;
+  }
+  .bottom-menu--padding {
+    padding: 0 0 0 30px;
+  }
+  .bottom-menu--padding:nth-of-type(3) {
+    padding: 0 30px 0 0 ;
+    text-align: right;
+  }
+  .bottom-menu__contact-container {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    height: 90px;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background: #fff;
+  }
+  .nav__logo-container {
+    line-height: 90px;
+  }
+  .baner {
+    height: calc(100vh - 90px);
+  }
+  .baner__title {
+    font-size: 36px;
+    line-height: 1.39;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .baner__title-wpraper {
+    margin-top: 163px;
+  }
+  .baner__button {
+    margin-top: 43px;
+  }
+  .baner__button--item {
+    height: 50px;
+  }
+  .baner__image-wraper {
+    position: absolute;
+    bottom: 0;
+  }
+  .who-we-are {
+    position: relative;
+    padding: 100px 0;
+  }
+  .who-we-are__paragraph-container {
+    margin-top: 0px;
+  }
+  .who-we-are__paragraph-text {
+    font-size: 15px;
+    line-height: 27px;
+    margin-top: 29px;
+  }
+  .who-we-are__paragraph-text--bolder {
+    font-weight: 700;
+  }
+  .who-we-are__button-container {
+    text-align: left;
+  }
+  .who-we-are__button--item {
+    width: 250px;
+    height: 50px;
+  }
+  .who-we-are__image-container {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: block;
+    width: 40%;
+  }
+  .who-we-are__image--item {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 90%;
+  }
+  .goal__main-title-container {
+    margin-top: 107px;
+  }
+  .main-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .goal__subtitle {
+    font-size: 50px;
+  }
+  .goal__paragraph {
+    font-size: 17px;
+  }
+  .goal--position {
+    margin-top: 42px;
+  }
+  .goal__subtitle-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .goal__button {
+    margin: 50px 0 107px 0;
+    width: 250px;
+    height: 50px;
+  }
+  .recruitment {
+    padding-top: 99px;
+  }
+  .recruitment__title {
+    font-size: 50px;
+  }
+  .recruitment__paragraph {
+    margin-top: 26px;
+    line-height: 27px;
+    font-size: 15px;
+  }
+  .recruitment__button {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}
