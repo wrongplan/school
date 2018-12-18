@@ -25,10 +25,87 @@ header {
 .nav__logo-container {
   line-height: 40px;
 }
-.nav__menu-inner {
+.nav__container {
+  position: absolute;
+  top: -270px;
+  left: 0;
+  height: 270px;
+  width: 100%;
   text-align: center;
+  background: #96bf0d;
+  transition: 0.5s;
+  z-index: 4;
+}
+.nav__container.active {
+  display: block;
+  border-bottom: 1px solid #fff;
+  top: 0;
+  left: 0;
+}
+.nav__menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: static;
+}
+.nav__menu-inner {
+  padding: 20px 20px;
+}
+.nav__menu-item {
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid white;
+  transition: 0.2s;
+}
+.nav__menu-item:hover {
   background: #005ba6;
+}
+.nav__menu-item a {
+  padding: 5px 0;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.nav__menu-item--blue {
   display: none;
+}
+.nav__burger {
+  width: 35px;
+  height: 25px;
+  align-self: center;
+  position: relative;
+  z-index: 5;
+}
+.nav__burger.active span {
+  transition: top 0.2s 0s, bottom 0.2s 0s, transform 0.1s 0.3s ;
+}
+.nav__burger span {
+  width: 100%;
+  border-radius: 3px;
+  height: 5px;
+  background: #005ba6;
+  position: absolute;
+  transition: top .2s 0.3s, bottom 0.2s 0.3s, transform 0.1s 0s;
+}
+.nav__burger span:nth-child(1) {
+  top: 0;
+}
+.nav__burger.active span:nth-child(1) {
+  top: calc(50% - (5px/2));
+  transform: rotate(45deg);
+}
+.nav__burger.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.nav__burger span:nth-child(2) {
+  top: calc(50% - (5px/2));
+}
+.nav__burger.active span:nth-child(3) {
+  bottom: calc(50% - (5px/2));
+  transform: rotate(-45deg);
+}
+.nav__burger span:nth-child(3) {
+  bottom: 0;
 }
 .baner {
   background: #005ba6;
@@ -454,6 +531,47 @@ header {
   }
   .nav__logo-container {
     line-height: 90px;
+  }
+  .nav__menu-wrapper {
+    line-height: 90px;
+  }
+  .nav__burger {
+    display: none;
+  }
+  .nav__container {
+    position: static;
+    height: auto;
+    width: 100%;
+    background: none;
+    transition: 0s;
+  }
+  .nav__menu-inner {
+    padding: 0;
+    display: flex;
+  }
+  .nav__menu-item {
+    margin: 0 auto;
+    width: auto;
+    border-bottom: none;
+    transition: 0.2s;
+  }
+  .nav__menu-item a {
+    display: inline;
+    font-size: 16px;
+    color: #005ba6;
+    font-weight: 700;
+  }
+  .nav__menu-item a:hover {
+    color: #96bf0d;
+  }
+  .nav__menu-item:hover {
+    background: none;
+  }
+  .nav__menu-item--blue {
+    display: block;
+  }
+  .nav__menu-item--white {
+    display: none;
   }
   .baner {
     height: 100vh;
