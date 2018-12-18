@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+ul {
+  margin-bottom: 0;
+}
 img {
   max-width: 100%;
 }
@@ -20,10 +23,14 @@ body {
   border: none;
 }
 header {
-  height: 40px;
+  height: 50px;
+  position: fixed;
+  z-index: 20;
+  background: #fff;
+  width: 100%;
 }
 .nav__logo-container {
-  line-height: 40px;
+  line-height: 50px;
 }
 .nav__container {
   position: absolute;
@@ -44,6 +51,7 @@ header {
 }
 .nav__menu-wrapper {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   position: static;
 }
@@ -110,7 +118,8 @@ header {
 .baner {
   background: #005ba6;
   position: relative;
-  height: calc(100vh - 40px);
+  height: 100vh;
+  padding-top: 50px;
 }
 .baner__fluid {
   position: relative;
@@ -151,7 +160,7 @@ header {
 }
 .baner__button--item:active {
   font-weight: 700;
-  background: red;
+  background: #ffba4c;
 }
 .baner__button--item:focus {
   font-weight: 700;
@@ -165,11 +174,35 @@ header {
 }
 .baner__button-wraper:nth-last-child(1) .baner__button--item:active {
   font-weight: 700;
-  background: red;
+  background: #ffba4c;
 }
 .baner__image-wraper {
   position: absolute;
   bottom: 0;
+}
+.social__container {
+  position: fixed;
+  right: 0;
+  top: 20vh;
+  z-index: 5;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 51px;
+  border-radius: 5px 0 0 5px;
+  background-color: #ffffff;
+}
+.social img {
+  max-height: 30px;
+}
+.social:hover {
+  background: #005ba6;
+}
+.instagram {
+  margin-top: 9px;
 }
 .who-we-are__paragraph-container {
   margin-top: 30px;
@@ -206,7 +239,7 @@ header {
 }
 .who-we-are__button--item:active {
   font-weight: 700;
-  background: red;
+  background: #ffba4c;
 }
 .who-we-are__image-container {
   text-align: center;
@@ -274,7 +307,7 @@ header {
 }
 .goal__button:active {
   font-weight: 700;
-  background: red;
+  background: #ffba4c;
 }
 .goal__button-container:nth-last-child(1) .goal__button {
   background: #96bf0d;
@@ -285,7 +318,7 @@ header {
 }
 .goal__button-container:nth-last-child(1) .goal__button:active {
   font-weight: 700;
-  background: red;
+  background: #ffba4c;
 }
 .recruitment {
   background: #f2f2f2;
@@ -321,6 +354,13 @@ header {
   margin-top: 19px;
   background: #005ba6;
 }
+.recruitment__button:hover {
+  background: #4991cc;
+}
+.recruitment__button:active {
+  font-weight: 700;
+  background: #ffba4c;
+}
 .recruitment__image-container {
   text-align: center;
   margin-top: 19px;
@@ -337,23 +377,24 @@ header {
 .bottom-menu--separator::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 70%;
   height: 1px;
   background: #808080;
-  margin: 20px 0 0 0;
+  margin: 20px auto 0 auto;
 }
 .bottom-menu__list-container {
   margin: 20px 0 0 0 ;
+  text-align: center;
 }
 .bottom-menu__menu-item {
-  padding: 2px 0;
+  padding: 5px 0;
 }
 .bottom-menu__menu-item--link {
   color: #005ba6;
   font-size: 13px;
 }
 .bottom-menu__menu-item--link:hover {
-  text-shadow: 0 0 0  #005ba6;
+  color: #96bf0d;
   text-decoration: none;
 }
 .bottom-menu__copy {
@@ -387,9 +428,6 @@ header {
   }
   .baner__button-wraper {
     text-align: right;
-  }
-  .baner__button--item {
-    margin-top: 0px;
   }
   .baner__button-wraper:nth-last-child(1) {
     text-align: left;
@@ -444,7 +482,7 @@ header {
   }
   .goal__button-container:nth-last-child(1) .goal__button:active {
     font-weight: 700;
-    background: red;
+    background: #ffba4c;
   }
   .goal--position {
     position: relative;
@@ -502,37 +540,28 @@ header {
     width: 1px;
     height: 100%;
     background: #808080;
-    margin: 0px 0 0 0;
+    margin: 0px 0 0 30px;
     position: absolute;
     top: 0;
     left: 100%;
   }
-  .bottom-menu__paragraph-and-logo-container {
-    padding-right: 30px;
-  }
-  .bottom-menu--padding {
-    padding: 0 0 0 30px;
-  }
-  .bottom-menu--padding:nth-of-type(3) {
-    padding: 0 30px 0 0 ;
-    text-align: right;
-  }
-  .bottom-menu__contact-container {
-    padding-left: 30px;
+  .bottom-menu__list-container {
+    float: right;
+    text-align: left;
   }
 }
 @media (min-width: 992px) {
+  .btn {
+    width: 250px;
+    height: 50px;
+  }
   header {
     height: 90px;
-    position: fixed;
     z-index: 20;
     width: 100%;
     background: #fff;
   }
   .nav__logo-container {
-    line-height: 90px;
-  }
-  .nav__menu-wrapper {
     line-height: 90px;
   }
   .nav__burger {
@@ -585,18 +614,24 @@ header {
     color: #fff;
   }
   .baner__title-wpraper {
-    margin-top: 163px;
+    margin-top: 253px;
   }
   .baner__button {
     margin-top: 43px;
   }
-  .baner__button--item {
-    width: 100%;
-    height: 50px;
-  }
   .baner__image-wraper {
     position: absolute;
     bottom: 0;
+  }
+  .social {
+    width: 72px;
+    height: 71px;
+  }
+  .social img {
+    max-height: 100%;
+  }
+  .social:hover {
+    background: #005ba6;
   }
   .who-we-are {
     position: relative;
@@ -619,10 +654,6 @@ header {
   .who-we-are__button-container {
     text-align: left;
   }
-  .who-we-are__button--item {
-    width: 250px;
-    height: 50px;
-  }
   .who-we-are__image-container {
     text-align: center;
     position: absolute;
@@ -635,7 +666,7 @@ header {
   .who-we-are__image--item {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 57px;
     max-height: 90%;
   }
   .goal__main-title-container {
@@ -665,8 +696,6 @@ header {
   }
   .goal__button {
     margin: 50px 0 107px 0;
-    width: 250px;
-    height: 50px;
   }
   .recruitment {
     padding-top: 99px;
@@ -682,5 +711,13 @@ header {
   .recruitment__button {
     margin-top: 30px;
     margin-bottom: 100px;
+  }
+  .bottom-menu--separator::after {
+    margin: 0px 0 0 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .bottom-menu--separator::after {
+    margin: 0px 0 0 100px;
   }
 }
